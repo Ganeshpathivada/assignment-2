@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>calculator</title>
+</head>
+<body>
+    <h1 class="title">Calculator</h1>
+   <div class="calculator">
+    
+    <div class="wrapper">
+        <div class="display">
+            <input id="output" value="0" onclick="removeZero()">
+        </div>
+            <div class="st-row">
+                <button class="clear" value="c" onclick="forclear()" style="width: 133px;">C</button>
+                <button class="symbols"  onclick="perc()">%</button>
+                <button class="symbols" onclick="fordisplay('/')">/</button>
+            </div>
+            <div class="st-row">
+                <button class="numbers" value="7" onclick="fordisplay('7')" >7</button>
+                <button class="numbers" value="8"onclick="fordisplay('8')">8</button>
+                <button class="numbers" value="9" onclick="fordisplay('9')">9</button>
+                <button class="symbols" value="X" onclick="fordisplay('*')">x</button>
+            </div>
+            <div class="st-row">
+                <button class="numbers" value="4" onclick="fordisplay('4')">4</button>
+                <button class="numbers" value="5" onclick="fordisplay('5')">5</button>
+                <button class="numbers" value="6" onclick="fordisplay('6')">6</button>
+                <button class="symbols" value="-" onclick="fordisplay('-')">-</button>
+            </div>
+            <div class="st-row">
+                <button class="numbers" value="1" onclick="fordisplay('1')" >1</button>
+                <button class="numbers" value="2" onclick="fordisplay('2')">2</button>
+                <button class="numbers" value="3" onclick="fordisplay('3')">3</button>
+                <button class="symbols" value="+" onclick="fordisplay('+')">+</button>
+            </div>
+            <div class="st-row">
+                <button class="numbers" style="width:133px" onclick="fordisplay('0')">0</button>
+                <button class="symbols" onclick="fordisplay('.')">.</button>
+                <button class="symbols"   onclick="solve()">=</button>
+            </div>
+    
+        </div>
+   </div>
+</body>
+</html>
