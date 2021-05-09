@@ -8,7 +8,7 @@ function removeZero(){
     var value=
     document.getElementById("output").value;
     if(value == 0){
-        value=" "
+        value=""
         document.getElementById("output").value=value;
       }
 }
@@ -28,10 +28,8 @@ function fordisplay(value){
 }
 
 function solve(){
-    if(document.getElementById("output").value != '0'){
-    removeZero()
-    var equation =
-    document.getElementById("output").value;
+    if(document.getElementById("output").value != '0' && document.getElementById("output").value != ''){
+    var equation = document.getElementById("output").value;
     var solved = eval(equation);
     document.getElementById("output").value = solved;
     }
