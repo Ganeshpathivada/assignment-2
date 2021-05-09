@@ -4,48 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
     <title>calculator</title>
 </head>
-<body>
-    <h1 class="title">Calculator</h1>
-   <div class="calculator">
+<body class="bg-secondary">
+    <h1 class="text-center mt-3 text-white">CALCULATOR</h1>
+<div class="container mt-5">
     
-    <div class="wrapper">
-        <div class="display">
-            <input id="output" value="0" onclick="removeZero()">
+    <div class=" bg-white shadow-lg  width m-auto">
+        
+        <div class=" " >
+            <input type="text" class="w-100 p-4 h1 m-0  text-right " value="0" id="output" onclick="removeZero()">
         </div>
-            <div class="st-row">
-                <button class="clear" value="c" onclick="forclear()" style="width: 133px;">C</button>
-                <button class="symbols"  onclick="perc()">%</button>
-                <button class="symbols" onclick="fordisplay('/')">/</button>
-            </div>
-            <div class="st-row">
-                <button class="numbers" value="7" onclick="fordisplay('7')" >7</button>
-                <button class="numbers" value="8"onclick="fordisplay('8')">8</button>
-                <button class="numbers" value="9" onclick="fordisplay('9')">9</button>
-                <button class="symbols" value="X" onclick="fordisplay('*')">x</button>
-            </div>
-            <div class="st-row">
-                <button class="numbers" value="4" onclick="fordisplay('4')">4</button>
-                <button class="numbers" value="5" onclick="fordisplay('5')">5</button>
-                <button class="numbers" value="6" onclick="fordisplay('6')">6</button>
-                <button class="symbols" value="-" onclick="fordisplay('-')">-</button>
-            </div>
-            <div class="st-row">
-                <button class="numbers" value="1" onclick="fordisplay('1')" >1</button>
-                <button class="numbers" value="2" onclick="fordisplay('2')">2</button>
-                <button class="numbers" value="3" onclick="fordisplay('3')">3</button>
-                <button class="symbols" value="+" onclick="fordisplay('+')">+</button>
-            </div>
-            <div class="st-row">
-                <button class="numbers" style="width:133px" onclick="fordisplay('0')">0</button>
-                <button class="symbols" onclick="fordisplay('.')">.</button>
-                <button class="symbols"   onclick="solve()">=</button>
-            </div>
-    
+        <div class="table-responsive">
+            <table class="table   ">
+                <tr>
+                    <td colspan="2">
+                        <button class="btn p-3 btn-outline-info bg-danger text-white" onclick="forclear()">c</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info bg-warning text-white" onclick="perc()">%</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info bg-warning text-white" onclick="fordisplay('/')">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn p-3 btn-outline-info" onclick="fordisplay('7')">7</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info" onclick="fordisplay('8')">8</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info" onclick="fordisplay('9')">9</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info bg-warning text-white" onclick="fordisplay('*')">x</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn p-3 btn-outline-info" onclick="fordisplay('4')">4</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info" onclick="fordisplay('5')">5</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info" onclick="fordisplay('6')">6</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info bg-warning text-white" onclick="fordisplay('-')">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn p-3 btn-outline-info" onclick="fordisplay('1')">1</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info" onclick="fordisplay('2')">2</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info" onclick="fordisplay('3')">3</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info bg-warning text-white" onclick="fordisplay('+')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="btn p-3 btn-outline-info" onclick="fordisplay('0')">0</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info" onclick="fordisplay('.')">.</button>
+                    </td>
+                    <td>
+                        <button class="btn p-3 btn-outline-info bg-warning text-white" onclick="solve()">=</button>
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
         </div>
-   </div>
+    </div>
+</div>  
+
+
 </body>
 </html>
